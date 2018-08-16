@@ -35,8 +35,9 @@ def imprime_msg_abertura():
     print('forca')
     print('******************')
 
-def carrega_palavra_secreta():
-    arquivo = open('palavras.txt', 'r')
+#parametro opcional
+def carrega_palavra_secreta(nome_arquivo='palavras.txt'):
+    arquivo = open(nome_arquivo, 'r')
     palavras = []
 
     for linha in arquivo:
